@@ -11,35 +11,46 @@
 
 <body>
     <main>
-        <nav class="logo">
-            <img src="logo.png" alt="logo">
+        <nav >
+            <div class="logo">
+            <img src="img/abcd.png" alt="logo">
+            </div>
+            <div class="mune">
+                <ol>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">contact</a></li>
+                    <li><a href="#">service</a></li>
+                    <li><a href="#">about</a></li>
+                </ol>
+            </div>
         </nav>
-        <form>
-            <div>
-                <div>
-                    <label> &nbsp; Type de propieté :</label>
-                    <input type="text" name="type de propieté">
+        
+        <div class="container">
+            <form> 
+                <div class="form-item">
+                    <label> &nbsp; Type de propiete :</label>
+                    <input type="text" name="type de propiete">
                     <label> &nbsp; Nombre de chambers :</label>
                     <input type="number" name="Numbre de chambers">
                     <label> &nbsp; Prix :</label>
                 </div>
-                <div class="prix">
+                <div class="prix form-item">
                     <input type="number" name="prix min" placeholder="min" class="prix-min">
                     <input type="number" name="prix max" placeholder="max" class="prix-max">
                 </div>
-                   <div>
+                <div class="form-item">
                     <label> &nbsp; Rayon de recherche :</label>
                     <input type="number" name="Numbre de chambers">
                 </div>
-                <div class="vendue">
+                <div class="vendue form-item">
                     <input type="checkbox">
-                    <label> Propriété vendues</label>
+                    <label> Propriete vendues</label>
                 </div><br><br>
-                    <div class="search">
-                        <input type="search" value="Recherche">
-                    </div>
-            </div>
+                <div class="search form-item">
+                    <input type="submit" value="Recherche">
+                </div>
         </form>
+        </div>
     </main>
     <footer>
 
