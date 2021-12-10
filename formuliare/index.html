@@ -27,22 +27,28 @@
         
         <div class="container">
             <form> 
-                <div class="form-item">
-                    <label> &nbsp; Type de propiete :</label>
-                    <input type="text" name="type de propiete">
-                    <label> &nbsp; Nombre de chambers :</label>
-                    <input type="number" name="Numbre de chambers">
+                <div class="form-item input">
+                    <label for="section"> &nbsp; Type de propriete :</label>
+
+                    <select id="section">
+                        <option value="Appartement">Appartement</option>
+                        <option value="Villa">Villa</option>
+                        <option value="Maison">Maison</option>
+                        <option value="Riad">Riad</option>
+                      </select>
+                    <label> &nbsp; Nombre de chamber :</label>
+                    <input type="number" name="Numbre de chambers" min="1">
                     <label> &nbsp; Prix :</label>
                 </div>
                 <div class="prix form-item">
-                    <input type="number" name="prix min" placeholder="min" class="prix-min">
-                    <input type="number" name="prix max" placeholder="max" class="prix-max">
+                    <input type="number" name="prix min" placeholder="min" class="prix-min" min="100">
+                    <input type="number" name="prix max" placeholder="max" class="prix-max" min="100">
                 </div>
-                <div class="form-item">
+                <div class="form-item input">
                     <label> &nbsp; Rayon de recherche :</label>
                     <input type="number" name="Numbre de chambers">
                 </div>
-                <div class="vendue form-item">
+                <div class="vendue form-item input" >
                     <input type="checkbox">
                     <label> Propriete vendues</label>
                 </div><br><br>
